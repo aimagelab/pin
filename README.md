@@ -192,6 +192,11 @@ python models/eval/pin/distributed_pin_eval.py --exp_name eval_dinov2 \
 --config configs/models/pin/pin_hm3d_rgb_v1_dino.yaml habitat.dataset.split=val
 ```
 
+To run experiments without injecting distractors of the same object category as the target object instance, add the following argument:
+```
+habitat.task.exclude_cat_distractors=True
+```
+
 ## :pushpin: Acknowledgements
 Special thanks to the following projects for providing the codebase used in this project:
 - [Habitat Lab](https://github.com/facebookresearch/habitat-lab) from Facebook Research

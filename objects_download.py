@@ -1,12 +1,9 @@
-import math
 import shutil
 import objaverse
 from tqdm import tqdm
-import trimesh
 import json
 import os
 import numpy as np
-from PIL import Image
 
 print(f"{objaverse.__version__=}")
 
@@ -24,18 +21,10 @@ print("Downloading Objects:")
 objects = objaverse.load_objects(uids=uids)
 anno = objaverse.load_annotations(uids=uids)
 
-unique_sources = [an['uri'].replace("https://", "").split("/")[0] for an in anno.values()]
-
-# view mesh with trimesh
-DEBUG = False
+unique_sources = np.unique([an['uri'].replace("https://", "").split("/")[0] for an in anno.values()])
+unique_license = np.unique([an['license'] for an in anno.values()], return_counts=True)
 
 for i, (obj_id, obj_path) in tqdm(enumerate(objects.items()), total=len(objects)):
-    if DEBUG:
-        mesh = trimesh.load(obj_path, process=True)
-        print(f"Showing mesh: {obj_id}, {obj_path}")
-        mesh.show(background=[127, 127, 127, 0])
-        print("Done")
-
     
     destination_path = os.path.join(objects_path, obj_id) + ".glb"
     if not os.path.exists(destination_path):
