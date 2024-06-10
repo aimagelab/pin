@@ -1,4 +1,4 @@
-# :pushpin: Personalized Instance-based Navigation (PIN)
+# Personalized Instance-based Navigation (PIN)
 This repository contains the codebase to run experiments on personalized navigation and use the PInNED dataset.
 
 ## :pushpin: Dataset Information
