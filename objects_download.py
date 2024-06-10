@@ -22,6 +22,9 @@ with open("data/object_ids.json", "rb") as file:
 print("Downloading Objects:")
 
 objects = objaverse.load_objects(uids=uids)
+anno = objaverse.load_annotations(uids=uids)
+
+unique_sources = [an['uri'].replace("https://", "").split("/")[0] for an in anno.values()]
 
 # view mesh with trimesh
 DEBUG = False
