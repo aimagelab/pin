@@ -145,7 +145,7 @@ Follow these steps to prepare the dataset:
     python -u object_download.py
     ```
 
-### :pushpin: Dataset Folder Structure
+### Dataset Folder Structure
 
 After downloading and moving the dataset and objects, your `data` folder should have the following structure:
 
