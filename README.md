@@ -199,10 +199,11 @@ habitat.task.exclude_cat_distractors=True
 
 ## :pushpin: Acknowledgements
 Special thanks to the following projects for providing the codebase used in this project:
-- [Habitat Lab](https://github.com/facebookresearch/habitat-lab) from Facebook Research
+- [Habitat-Lab](https://github.com/facebookresearch/habitat-lab) from Facebook Research
+- [Habitat-Sim](https://github.com/facebookresearch/habitat-sim) from Facebook Research
 - [Habitat-Matterport 3D Dataset (HM3D)](https://github.com/facebookresearch/habitat-matterport3d-dataset) from Facebook Research
-- [Objaverse-XL](https://github.com/allenai/objaverse-xl) from AllenAI
-- [Cow](https://github.com/real-stanford/cow) from Robotics & Embodied Artificial Intelligence Lab (REAL) @ Stanford University
+- [Objaverse-XL](https://github.com/allenai/objaverse-xl) from Allen Institute for AI
+- [CoWs on Pasture](https://github.com/real-stanford/cow) from Robotics & Embodied Artificial Intelligence Lab (REAL) @ Stanford University
 - [Home Robot](https://github.com/facebookresearch/home-robot) from Facebook Research
 
 ## :pushpin: Licenses and Terms of Use
