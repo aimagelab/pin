@@ -1,0 +1,43 @@
+defaults:
+  - task_config_base
+  - actions:
+    - found
+    - move_forward
+    - turn_left
+    - turn_right
+  - measurements:
+    - episode_length
+    # - distance_to_goal
+    - distance_to_curr_goal
+    - distance_to_multi_goal
+    - sub_success
+    # - success
+    - multion_success
+    - mspl
+    - percentage_success
+    - pspl
+    # - distance_to_goal_reward
+  - lab_sensors:
+    - multiobjectgoal_sensor
+    - compass_sensor
+    - gps_sensor
+  - _self_
+
+type: MultiObjectNav-v1
+end_on_success: True
+reward_measure: "distance_to_goal_reward"
+success_measure: "mspl"
+goal_sensor_uuid: multiobjectgoal
+objects_path: "data/datasets/3_ON/objects"
+include_distractors: True
+measurements:
+  multion_success:
+    success_distance: 1.5
+  sub_success:
+    success_distance: 1.5
+  percentage_success:
+    success_distance: 1.5
+  distance_to_curr_goal:
+    distance_to: VIEW_POINTS
+  distance_to_multi_goal:
+    distance_to: VIEW_POINTS

@@ -1,0 +1,98 @@
+# @package _global_
+
+defaults:
+  - /habitat: habitat_config_base
+  - /habitat/task: pin
+  - /habitat/simulator/agents@habitat.simulator.agents.main_agent: rgbds_agent
+  - /habitat/dataset/pin: hm3d
+  - _self_
+# override existing config elements
+
+habitat:
+  dataset:
+    split: train
+    data_path: data/datasets/pin/hm3d/v1/{split}/{split}.json.gz
+  environment:
+    max_episode_steps: 1000
+    iterator_options:
+      shuffle: False
+      max_scene_repeat_steps: -1
+  seed: 1
+  simulator:
+    habitat_sim_v0:
+      allow_sliding: True
+    forward_step_size: 0.25
+    turn_angle: 30
+    tilt_angle: 30
+    action_space_config: v1
+    agents:
+      main_agent:
+        sim_sensors:
+          rgb_sensor:
+            width: 360
+            height: 640
+            hfov: 42
+            position: [0, 1.31, 0]
+          depth_sensor:
+            width: 360
+            height: 640
+            hfov: 42
+            min_depth: 0.5
+            max_depth: 5.0
+            position: [0, 1.31, 0]
+          semantic_sensor:
+            width: 360
+            height: 640
+            hfov: 42
+            position: [0, 1.31, 0]
+        height: 1.41
+        radius: 0.17
+
+semantic_map:
+  map_size_cm: 4800                 # global map size (in centimeters)
+  map_resolution: 5                 # size of map bins (in centimeters)
+  vision_range: 100                 # diameter of local map region visible by the agent (in cells)
+  explored_radius: 50              # radius (in centimeters) of visually explored region
+  been_close_to_radius: 200         # radius (in centimeters) of been close to region
+  global_downscaling: 2             # ratio of global over local map
+  du_scale: 4                       # frame downscaling before projecting to point cloud
+  cat_pred_threshold: 5.0           # number of depth points to be in bin to classify it as a certain semantic category
+  exp_pred_threshold: 1.0           # number of depth points to be in bin to consider it as explored
+  map_pred_threshold: 1.0           # number of depth points to be in bin to consider it as obstacle
+  num_sem_categories: 1
+  must_explore_close: False
+  min_obs_height_cm: 10             # minimum height (in centimeters) of obstacle to be considered as obstacle
+  # erosion and filtering to reduce the number of spurious artifacts
+  dilate_obstacles: False
+  dilate_size: 3
+  dilate_iter: 1
+planner:
+  collision_threshold: 0.20         # forward move distance under which we consider there's a collision (in meters)
+  step_size: 5                      # maximum distance of the short-term goal selected by the planner
+  obs_dilation_selem_radius: 3      # radius (in cells) of obstacle dilation structuring element
+  goal_dilation_selem_radius: 11    # radius (in cells) of goal dilation structuring element
+  min_obs_dilation_selem_radius: 3  # min radius (in cells) of obstacle dilation structuring element
+  map_downsample_factor: 1          # optional downsampling of traversible and goal map before fmm distance call (1 for no downsampling, 2 for halving resolution)
+  map_update_frequency: 1           # compute fmm distance map every n steps 
+  discrete_actions: True            # discrete motion planner output space or not
+  use_dilation_for_stg: True        # use dilated goals for estimating short-term goals - or just reaching
+  verbose: False                    # display debug information during planning
+semantic_prediction:
+  depth_filtering: True
+  depth_filter_range_cm: 100        # 1m about the depth median (+/- 50cm)
+  goal_filtering: True              # filter out outlier points in the goal map w/ DBSCAN
+cow:
+  method: "dino"
+  model_name: vit_base_patch14_dinov2.lvd142m
+  match_threshold: 0.5
+  resize_dim: 518
+exp_name: debug
+num_environments: 1
+simulator_gpu_id: 0
+dump_location: dbg_imgs/pin
+generate_videos: False
+frame_width: 360
+frame_height: 640
+preprojection_kp_dilation: 4        # KP-based loc: how much to dilate keypoints prior to projection and aggregation
+multiscale: False
+scales: [30, 180]

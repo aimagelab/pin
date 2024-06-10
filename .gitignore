@@ -1,0 +1,114 @@
+# .gitignore - This is a comment. It doesn't affect the behavior of the file.
+
+# Ignore IDE configuration files
+.vscode/
+.idea/
+
+# Ignore Python byte-code files
+__pycache__/
+*.py[cod]
+
+# Ignore log files
+*.log
+logs/
+*.jsonl
+
+# Ignore pickle files
+*.pickle
+
+# Ignore debug images
+dbg_imgs/
+*.jpg
+*.jpeg
+*.png
+*.PNG
+
+# Ignore video files
+*.mp4
+*.mpeg
+*.gif
+
+# Ignore DS_Store files
+.DS_Store
+
+# Ignore assets
+*.assets
+
+# Ignore data folder
+data/datasets
+data/scene_datasets
+data/objects
+data/images
+data/default.phys_scene_config.json
+output_dir/
+
+# Ignore temporary files
+*.tmp
+
+# Ignore database files
+*.db
+
+# Ignore local configuration files
+*.cfg
+
+# Ignore virtual environment files
+venv/
+
+# Ignore .sh files
+*.sh
+
+# Ignore the 'hbt/' directory
+hbt/
+
+# Ignore Dockerfile
+Dockerfile
+
+# Other files
+models/eval/multion/multion_eval_old.py
+
+# Wandb files
+wandb/
+
+# tb files
+tb/
+
+# Ignore the 'tmp/' directory
+tmp/
+
+# Ignore the 'results/' directory
+results/
+results*/
+
+# Ignore the 'pasture_builds/' directory
+utils/cow_utils/pasture_builds/
+
+# Ignore the 'rsync_exclude_list.txt' file
+rsync_exclude_list.txt
+
+# Ignore the model weights
+*.pth
+*.pt
+*.resS
+
+# Ignore the numpy files
+*.npy
+
+# Ignore .glb files
+*.glb
+
+# Old yaml files
+*_.yaml
+*old.yaml
+
+# lock files
+*.lock
+
+# Ignore mdb files
+*.mdb
+
+# Ignore the 'run_bash.sh' file
+bash.sh
+
+# Ignore the 'requirements.txt' file
+# requirements.txt
+requirements2.txt

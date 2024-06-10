@@ -1,0 +1,16 @@
+channels:
+  - pytorch
+  - pytorch3d
+  - nvidia
+  - conda-forge
+  - pyg
+dependencies:
+  - python==3.9.*
+  - cmake
+  - pybind11
+  - pytorch3d
+  - mkl=2024.0
+  - pyg
+  - pytorch-cluster
+  - pytorch-scatter
+  - pip
