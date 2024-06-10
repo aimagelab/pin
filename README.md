@@ -92,7 +92,7 @@ An episode is considered successful if the agent navigates to the target object 
             "scene_dataset_config": "data/scene_datasets/hm3d/hm3d_annotated_basis.scene_dataset_config.json",
             "object_category": "backpack",
             "object_id": "3f5948f7f47343acb868072a7fe92ada"
-        }
+}
 ```
 </details>
 
