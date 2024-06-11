@@ -6,11 +6,14 @@ The task of Personalized Instance-based Navigation (PIN) requires the agent to f
 
 In order to tackle PIN, we built Personalized Instance-based Navigation Embodied Dataset (PInNED) which is based on photo-realistic personalized objects injected in the scenes of HM3D dataset. It comprises 338 object instances belonging to 18 different categories positioned within 145 training and 35 validation environments, for a total of 865,519 and 1,193 navigation episodes, respectively for the training and validation splits.
 
-| | | | | | |
-|:-:|:-:|:-:|:-:|:-:|:-:|
 | ![backpack](images/backpack.gif) | ![bag](images/bag.gif) | ![ball](images/ball.gif) | ![book](images/book.gif) | ![camera](images/camera.gif) | ![cellphone](images/cellphone.gif) |
+|:-:|:-:|:-:|:-:|:-:|:-:|
+
 | ![eyeglasses](images/eyeglasses.gif) | ![hat](images/hat.gif) | ![headphones](images/headphones.gif) | ![keys](images/keys.gif) | ![laptop](images/laptop.gif) | ![mug](images/mug.gif) |
+|:-:|:-:|:-:|:-:|:-:|:-:|
+
 | ![shoes](images/shoes.gif) | ![teddy bear](images/teddy_bear.gif) | ![toy](images/toy.gif) | ![visor](images/visor.gif) | ![wallet](images/wallet.gif) | ![watch](images/watch.gif) |
+|:-:|:-:|:-:|:-:|:-:|:-:|
 
 ## :pushpin: Episode Information
 Each episode in PInNED consists of a target object instance and a set of distractors. The target object instance is the object that the agent is required to navigate to. The distractors are objects that are not the target object instance. The distractors can be of the same category as the target object instance or of a different category. The distractors are placed in the scene in such a way that they are visible to the agent. The agent is required to navigate to the target object instance while avoiding the distractors.
