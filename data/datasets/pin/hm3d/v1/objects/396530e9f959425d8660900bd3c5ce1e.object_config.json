@@ -1,0 +1,36 @@
+{
+    "scale": [
+        0.012325871821926595,
+        0.012325871821926595,
+        0.012325871821926595
+    ],
+    "friction_coefficient": 10000000.0,
+    "render_asset": "396530e9f959425d8660900bd3c5ce1e.glb",
+    "requires_lighting": true,
+    "up": [
+        0.0,
+        1.0,
+        0.0
+    ],
+    "front": [
+        0.0,
+        1.0,
+        0.0
+    ],
+    "spinning_friction_coefficient": 10000000.0,
+    "COM": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "gravity": [
+        0,
+        0,
+        0
+    ],
+    "force_flat_shading": true,
+    "is_collidable": true,
+    "use_mesh_for_collision": true,
+    "semantic_id": 1,
+    "semantic_category": "bag"
+}

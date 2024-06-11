@@ -1,0 +1,36 @@
+{
+    "scale": [
+        0.11957459461038879,
+        0.11957459461038879,
+        0.11957459461038879
+    ],
+    "friction_coefficient": 10000000.0,
+    "render_asset": "3f5948f7f47343acb868072a7fe92ada.glb",
+    "requires_lighting": true,
+    "up": [
+        0.0,
+        1.0,
+        0.0
+    ],
+    "front": [
+        0.0,
+        1.0,
+        0.0
+    ],
+    "spinning_friction_coefficient": 10000000.0,
+    "COM": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "gravity": [
+        0,
+        0,
+        0
+    ],
+    "force_flat_shading": true,
+    "is_collidable": true,
+    "use_mesh_for_collision": true,
+    "semantic_id": 0,
+    "semantic_category": "backpack"
+}

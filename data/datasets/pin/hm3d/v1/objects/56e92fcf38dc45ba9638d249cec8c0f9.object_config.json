@@ -1,0 +1,36 @@
+{
+    "scale": [
+        0.013155882789601114,
+        0.013155882789601114,
+        0.013155882789601114
+    ],
+    "friction_coefficient": 10000000.0,
+    "render_asset": "56e92fcf38dc45ba9638d249cec8c0f9.glb",
+    "requires_lighting": true,
+    "up": [
+        0.0,
+        1.0,
+        0.0
+    ],
+    "front": [
+        0.0,
+        1.0,
+        0.0
+    ],
+    "spinning_friction_coefficient": 10000000.0,
+    "COM": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "gravity": [
+        0,
+        0,
+        0
+    ],
+    "force_flat_shading": true,
+    "is_collidable": true,
+    "use_mesh_for_collision": true,
+    "semantic_id": 11,
+    "semantic_category": "mug"
+}

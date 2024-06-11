@@ -1,0 +1,36 @@
+{
+    "scale": [
+        0.00021603087848375005,
+        0.00021603087848375005,
+        0.00021603087848375005
+    ],
+    "friction_coefficient": 10000000.0,
+    "render_asset": "3b5c8cafe4724879bd06fadc28ec556f.glb",
+    "requires_lighting": true,
+    "up": [
+        0.0,
+        1.0,
+        0.0
+    ],
+    "front": [
+        0.0,
+        1.0,
+        0.0
+    ],
+    "spinning_friction_coefficient": 10000000.0,
+    "COM": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "gravity": [
+        0,
+        0,
+        0
+    ],
+    "force_flat_shading": true,
+    "is_collidable": true,
+    "use_mesh_for_collision": true,
+    "semantic_id": 6,
+    "semantic_category": "eyeglasses"
+}

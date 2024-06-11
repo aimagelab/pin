@@ -1,0 +1,36 @@
+{
+    "scale": [
+        0.04445106896007932,
+        0.04445106896007932,
+        0.04445106896007932
+    ],
+    "friction_coefficient": 10000000.0,
+    "render_asset": "700f69f4cb5b4f8c80031a76d8d7d6b8.glb",
+    "requires_lighting": true,
+    "up": [
+        0.0,
+        1.0,
+        0.0
+    ],
+    "front": [
+        0.0,
+        1.0,
+        0.0
+    ],
+    "spinning_friction_coefficient": 10000000.0,
+    "COM": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "gravity": [
+        0,
+        0,
+        0
+    ],
+    "force_flat_shading": true,
+    "is_collidable": true,
+    "use_mesh_for_collision": true,
+    "semantic_id": 9,
+    "semantic_category": "keys"
+}

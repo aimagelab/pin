@@ -1,0 +1,36 @@
+{
+    "scale": [
+        0.00517177096060836,
+        0.00517177096060836,
+        0.00517177096060836
+    ],
+    "friction_coefficient": 10000000.0,
+    "render_asset": "c896964ab7274bff810ac5ae9165cf8c.glb",
+    "requires_lighting": true,
+    "up": [
+        0.0,
+        1.0,
+        0.0
+    ],
+    "front": [
+        0.0,
+        1.0,
+        0.0
+    ],
+    "spinning_friction_coefficient": 10000000.0,
+    "COM": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "gravity": [
+        0,
+        0,
+        0
+    ],
+    "force_flat_shading": true,
+    "is_collidable": true,
+    "use_mesh_for_collision": true,
+    "semantic_id": 17,
+    "semantic_category": "watch"
+}

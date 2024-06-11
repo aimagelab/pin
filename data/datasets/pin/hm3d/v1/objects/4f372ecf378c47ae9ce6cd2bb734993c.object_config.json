@@ -1,0 +1,36 @@
+{
+    "scale": [
+        0.004215105808760292,
+        0.004215105808760292,
+        0.004215105808760292
+    ],
+    "friction_coefficient": 10000000.0,
+    "render_asset": "4f372ecf378c47ae9ce6cd2bb734993c.glb",
+    "requires_lighting": true,
+    "up": [
+        0.0,
+        1.0,
+        0.0
+    ],
+    "front": [
+        0.0,
+        1.0,
+        0.0
+    ],
+    "spinning_friction_coefficient": 10000000.0,
+    "COM": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "gravity": [
+        0,
+        0,
+        0
+    ],
+    "force_flat_shading": true,
+    "is_collidable": true,
+    "use_mesh_for_collision": true,
+    "semantic_id": 7,
+    "semantic_category": "hat"
+}

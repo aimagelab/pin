@@ -1,0 +1,36 @@
+{
+    "scale": [
+        0.10051677429636198,
+        0.10051677429636198,
+        0.10051677429636198
+    ],
+    "friction_coefficient": 10000000.0,
+    "render_asset": "8abacf30422f4c48842b8ffef5611e0f.glb",
+    "requires_lighting": true,
+    "up": [
+        0.0,
+        1.0,
+        0.0
+    ],
+    "front": [
+        0.0,
+        1.0,
+        0.0
+    ],
+    "spinning_friction_coefficient": 10000000.0,
+    "COM": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "gravity": [
+        0,
+        0,
+        0
+    ],
+    "force_flat_shading": true,
+    "is_collidable": true,
+    "use_mesh_for_collision": true,
+    "semantic_id": 5,
+    "semantic_category": "cellphone"
+}

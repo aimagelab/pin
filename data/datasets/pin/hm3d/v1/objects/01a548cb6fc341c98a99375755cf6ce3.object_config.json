@@ -1,0 +1,37 @@
+{
+    "scale": [
+        0.014533845567350332,
+        0.014533845567350332,
+        0.014533845567350332
+    ],
+    "friction_coefficient": 10000000.0,
+    "render_asset": "01a548cb6fc341c98a99375755cf6ce3.glb",
+    "requires_lighting": true,
+    "up": [
+        0.0,
+        1.0,
+        0.0
+    ],
+    "front": [
+        0.0,
+        1.0,
+        0.0
+    ],
+    "spinning_friction_coefficient": 10000000.0,
+    "COM": [
+        0,
+        0,
+        0
+    ],
+    "gravity": [
+        0,
+        0,
+        0
+    ],
+    "force_flat_shading": true,
+    "is_collidable": true,
+    "use_mesh_for_collision": true,
+    "height": -0.0225435271859169,
+    "semantic_id": 3,
+    "semantic_category": "book"
+}

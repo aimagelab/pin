@@ -1,0 +1,36 @@
+{
+    "scale": [
+        0.015636715001756403,
+        0.015636715001756403,
+        0.015636715001756403
+    ],
+    "friction_coefficient": 10000000.0,
+    "render_asset": "821452ba26ca4742b45d0bc4ac9fb9bd.glb",
+    "requires_lighting": true,
+    "up": [
+        0.0,
+        1.0,
+        0.0
+    ],
+    "front": [
+        0.0,
+        1.0,
+        0.0
+    ],
+    "spinning_friction_coefficient": 10000000.0,
+    "COM": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "gravity": [
+        0,
+        0,
+        0
+    ],
+    "force_flat_shading": true,
+    "is_collidable": true,
+    "use_mesh_for_collision": true,
+    "semantic_id": 8,
+    "semantic_category": "headphones"
+}

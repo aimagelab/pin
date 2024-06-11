@@ -20,8 +20,6 @@ logs/
 dbg_imgs/
 *.jpg
 *.jpeg
-*.png
-*.PNG
 
 # Ignore video files
 *.mp4
@@ -34,7 +32,6 @@ dbg_imgs/
 *.assets
 
 # Ignore data folder
-data/datasets
 data/scene_datasets
 data/objects
 data/images

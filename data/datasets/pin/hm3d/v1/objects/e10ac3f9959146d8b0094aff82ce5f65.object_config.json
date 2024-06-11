@@ -1,0 +1,36 @@
+{
+    "scale": [
+        0.9667125305275414,
+        0.9667125305275414,
+        0.9667125305275414
+    ],
+    "friction_coefficient": 10000000.0,
+    "render_asset": "e10ac3f9959146d8b0094aff82ce5f65.glb",
+    "requires_lighting": true,
+    "up": [
+        0.0,
+        1.0,
+        0.0
+    ],
+    "front": [
+        0.0,
+        1.0,
+        0.0
+    ],
+    "spinning_friction_coefficient": 10000000.0,
+    "COM": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "gravity": [
+        0,
+        0,
+        0
+    ],
+    "force_flat_shading": true,
+    "is_collidable": true,
+    "use_mesh_for_collision": true,
+    "semantic_id": 12,
+    "semantic_category": "shoes"
+}

@@ -1,0 +1,36 @@
+{
+    "scale": [
+        1.4379115079301616,
+        1.4379115079301616,
+        1.4379115079301616
+    ],
+    "friction_coefficient": 10000000.0,
+    "render_asset": "2ff0b6e5752144c48346513ababaa1f7.glb",
+    "requires_lighting": true,
+    "up": [
+        0.0,
+        1.0,
+        0.0
+    ],
+    "front": [
+        0.0,
+        1.0,
+        0.0
+    ],
+    "spinning_friction_coefficient": 10000000.0,
+    "COM": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "gravity": [
+        0,
+        0,
+        0
+    ],
+    "force_flat_shading": true,
+    "is_collidable": true,
+    "use_mesh_for_collision": true,
+    "semantic_id": 4,
+    "semantic_category": "camera"
+}
