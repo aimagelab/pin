@@ -138,17 +138,33 @@ class ClipOwl(nn.Module):
 
         self.center_only = center_only
 
-    def forward(self, x, o):
-        texts = [
-            [
-                self.sentence_lookup[o],
-            ],
-        ]
-        inputs = self.processor(
-            text=texts, images=x, return_tensors="pt", truncation=True
-        )
+    def forward(self, x, o, text_ids=None):
+        if text_ids is None:
+            if o in self.sentence_lookup:
+                texts = [
+                    [
+                        self.sentence_lookup[o],
+                    ],
+                ]
+            else:
+                texts = [
+                    [
+                        "a photo of a " + o + ".",
+                    ]
+                ]
+            inputs = self.processor(
+                text=texts, images=x, return_tensors="pt", truncation=True
+            )
+        else:
+            inputs = self.processor(
+                images=x, return_tensors="pt", truncation=True
+            )
+            inputs["input_ids"] = text_ids
+
         for k in inputs:
             inputs[k] = inputs[k].to(self.device)
+            
+        ret_text_id = inputs['input_ids']
 
         outputs = self.model(**inputs)
 
@@ -181,7 +197,7 @@ class ClipOwl(nn.Module):
                 else:
                     image_relevance[box[1] : box[3], box[0] : box[2]] = 1.0
 
-        return image_relevance
+        return image_relevance, ret_text_id
 
     def remap_classes(self, remap):
         remapped_classes = []

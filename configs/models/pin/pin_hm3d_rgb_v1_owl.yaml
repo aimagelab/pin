@@ -167,7 +167,7 @@ cow:
     'a tattoo of the {}.']
   threshold: 0.2
   center_only: true
-  modality: "image-to-image"
+  modality: "captions"
   min_matches: 1
   method: "owl"
   resize_dim: 224
