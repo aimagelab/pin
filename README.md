@@ -142,7 +142,7 @@ Follow these steps to prepare the dataset:
 
 3. **Download object assets**: Download the object assets from the [Objaverse-XL](https://objaverse.allenai.org/) dataset. Using this command:
     ```
-    python -u object_download.py
+    python -u objects_download.py
     ```
 
 ### Dataset Folder Structure
@@ -152,7 +152,7 @@ After downloading and moving the dataset and objects, your `data` folder should 
 ```bash
 data
 ├── scene_datasets/
-│   └── hm3d_v0.2/
+│   └── hm3d/
 │       ├── train/
 │       │   └── 00000-kfPV7w3FaU5/
 │       │       ├── kfPV7w3FaU5.basis.glb
