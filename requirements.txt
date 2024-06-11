@@ -31,3 +31,4 @@ loguru
 transformers==4.26.1
 jsonlines
 wandb
+objaverse

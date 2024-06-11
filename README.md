@@ -6,11 +6,14 @@ The task of Personalized Instance-based Navigation (PIN) requires the agent to f
 
 In order to tackle PIN, we built Personalized Instance-based Navigation Embodied Dataset (PInNED) which is based on photo-realistic personalized objects injected in the scenes of HM3D dataset. It comprises 338 object instances belonging to 18 different categories positioned within 145 training and 35 validation environments, for a total of 865,519 and 1,193 navigation episodes, respectively for the training and validation splits.
 
-| | | | | | |
-|:-:|:-:|:-:|:-:|:-:|:-:|
 | ![backpack](images/backpack.gif) | ![bag](images/bag.gif) | ![ball](images/ball.gif) | ![book](images/book.gif) | ![camera](images/camera.gif) | ![cellphone](images/cellphone.gif) |
+|:-:|:-:|:-:|:-:|:-:|:-:|
+
 | ![eyeglasses](images/eyeglasses.gif) | ![hat](images/hat.gif) | ![headphones](images/headphones.gif) | ![keys](images/keys.gif) | ![laptop](images/laptop.gif) | ![mug](images/mug.gif) |
+|:-:|:-:|:-:|:-:|:-:|:-:|
+
 | ![shoes](images/shoes.gif) | ![teddy bear](images/teddy_bear.gif) | ![toy](images/toy.gif) | ![visor](images/visor.gif) | ![wallet](images/wallet.gif) | ![watch](images/watch.gif) |
+|:-:|:-:|:-:|:-:|:-:|:-:|
 
 ## :pushpin: Episode Information
 Each episode in PInNED consists of a target object instance and a set of distractors. The target object instance is the object that the agent is required to navigate to. The distractors are objects that are not the target object instance. The distractors can be of the same category as the target object instance or of a different category. The distractors are placed in the scene in such a way that they are visible to the agent. The agent is required to navigate to the target object instance while avoiding the distractors.
@@ -92,7 +95,7 @@ An episode is considered successful if the agent navigates to the target object 
             "scene_dataset_config": "data/scene_datasets/hm3d/hm3d_annotated_basis.scene_dataset_config.json",
             "object_category": "backpack",
             "object_id": "3f5948f7f47343acb868072a7fe92ada"
-        }
+}
 ```
 </details>
 
@@ -142,7 +145,7 @@ Follow these steps to prepare the dataset:
 
 3. **Download object assets**: Download the object assets from the [Objaverse-XL](https://objaverse.allenai.org/) dataset. Using this command:
     ```
-    python -u object_download.py
+    python -u objects_download.py
     ```
 
 ### Dataset Folder Structure
@@ -152,7 +155,7 @@ After downloading and moving the dataset and objects, your `data` folder should 
 ```bash
 data
 ├── scene_datasets/
-│   └── hm3d_v0.2/
+│   └── hm3d/
 │       ├── train/
 │       │   └── 00000-kfPV7w3FaU5/
 │       │       ├── kfPV7w3FaU5.basis.glb
