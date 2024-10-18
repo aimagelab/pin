@@ -105,7 +105,7 @@ To install the required dependencies, run the following commands.
 
 Prepare the environment:
 ```
-git clone --recursive -j8 git://github.com/xxxx/xxx.git
+git clone --recursive -j8 git://github.com/aimagelab/pin.git
 conda create -n pin python=3.9 cmake=3.14.0 pybind11
 conda activate pin
 conda install pytorch=1.13.1 torchvision pytorch-cuda=11.7 -c pytorch -c nvidia
